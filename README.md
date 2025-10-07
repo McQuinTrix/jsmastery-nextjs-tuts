@@ -47,3 +47,4 @@ Layout Files
 Errors
 - global-error.tsx file in root
 - each group/page can have a file - error.tsx
+- only the nearest error file shows up
