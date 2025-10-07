@@ -43,3 +43,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 Layout Files
 - Must render children for every layout file.
+
+Errors
+- global-error.tsx file in root
+- each group/page can have a file - error.tsx
