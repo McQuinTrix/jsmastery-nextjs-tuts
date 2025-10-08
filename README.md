@@ -35,6 +35,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
+## Notes
+
 
 [id] -> dynamic pages
 (dashboard)
@@ -48,3 +50,35 @@ Errors
 - global-error.tsx file in root
 - each group/page can have a file - error.tsx
 - only the nearest error file shows up
+
+Loading pages
+- loading.tsx
+
+Next.js also provides parellel routes, intercepting routes, & localization routes
+
+- ISR/SSR - you can set time limit for revalidation or you can revalidate on demand
+- PPR
+
+Metadata in page.tsx 
+- Each page.tsx could have their metadata & in root they can have metadata as fallback default
+- export const metadata = {
+    title: "Contact",
+    description: "Its the contact page",
+}
+- file based metadata 
+- favicon.ico
+- icon.svg
+- opengraph-image.jpeg
+- twitter-image.png
+- https://nextjs.org/docs/app/getting-started/metadata-and-og-images
+
+
+## Backend in Nextjs
+
+- folder/route.ts - api route: weburl/folder
+export async function GET() {
+    return Response.json({
+        message: "Hello world from BE!"
+    })
+}
+
